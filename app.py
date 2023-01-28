@@ -231,7 +231,7 @@ def upload_file():
                     y_test = test_result_df["heartRate"].values
 
                     # Create the model
-                    regressor = MLPRegressor(batch_size=21, hidden_layer_sizes=(70,), max_iter=10, random_state=0)
+                    regressor = MLPRegressor(batch_size=16, hidden_layer_sizes=(50,), max_iter=10, random_state=0)
 
                     # Train the model
                     regressor.fit(X_train, y_train)
